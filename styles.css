@@ -6,11 +6,7 @@
 
 .screen{
   top: 1rem;
-<<<<<<< HEAD
   left: 10px;
-=======
-  left: 1rem;
->>>>>>> 12b64854ee7ca4e261cbb48fea5bb972201b9779
   position: relative;
   border: 2px solid black;
   width: 800px;
@@ -19,11 +15,7 @@
 
 .character{
   position: absolute;
-<<<<<<< HEAD
   left: 50px;
-=======
-  left: 150px;
->>>>>>> 12b64854ee7ca4e261cbb48fea5bb972201b9779
   top: 300px;
   height: 100px;
   width: 50px;
@@ -40,11 +32,7 @@
 }
 
 .move{
-<<<<<<< HEAD
   animation: move 1s linear infinite;
-=======
-  animation: move 2s linear infinite;
->>>>>>> 12b64854ee7ca4e261cbb48fea5bb972201b9779
 }
 
 @keyframes move{
@@ -58,15 +46,8 @@
 
 @keyframes jump{
   0%{top: 300px;}
-<<<<<<< HEAD
   25%{top: 200px;}
   75%{top: 200px}
   100%{top: 300px;}
 }
 /* Other ways this^ - transform translate */
-=======
-  35%{top: 200px;}
-  75%{top: 200px}
-  100%{top: 300px;}
-}
->>>>>>> 12b64854ee7ca4e261cbb48fea5bb972201b9779

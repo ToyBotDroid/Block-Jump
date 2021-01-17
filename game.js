@@ -1,6 +1,5 @@
 let character = document.querySelector('.character')
 let block = document.querySelector('.block')
-<<<<<<< HEAD
 let screen = document.querySelector('.screen')
 let displayScore = document.querySelector('.display-score')
 
@@ -51,6 +50,3 @@ to make it responsive
 2. or make double the code, which i firmly believe isn't worthy or the right way to code 
 
 */
-=======
-
->>>>>>> 12b64854ee7ca4e261cbb48fea5bb972201b9779
