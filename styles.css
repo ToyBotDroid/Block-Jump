@@ -4,6 +4,10 @@
   margin: 0px;
 }
 
+body{
+  background-color: lightgreen;
+}
+
 .screen{
   top: 1rem;
   left: 10px;
@@ -11,6 +15,7 @@
   border: 2px solid black;
   width: 800px;
   height: 400px;
+  background-color: #fff;
 }
 
 .character{
@@ -50,4 +55,16 @@
   75%{top: 200px}
   100%{top: 300px;}
 }
-/* Other ways this^ - transform translate */
+/* Other ways to animate this^ - transform translate */
+
+
+button{
+  margin: 5px 40vw;
+  padding: 5px 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+  body {
+    transform: scale(.6) translateX( -100px);
+}
