@@ -8,6 +8,13 @@ body{
   background-color: lightgreen;
 }
 
+h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);;
+}
+
 .screen{
   top: 1rem;
   left: 10px;
@@ -16,6 +23,7 @@ body{
   width: 800px;
   height: 400px;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .character{
@@ -32,12 +40,12 @@ body{
   height: 50px;
   width: 50px;
   top: 350px;
-  right: 0px;
+  right: -100px;
   background-color: #000;
 }
 
 .move{
-  animation: move 1s linear infinite;
+  animation: move 1.5s linear infinite;
 }
 
 @keyframes move{

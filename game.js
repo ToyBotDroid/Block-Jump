@@ -3,24 +3,34 @@ let block = document.querySelector('.block')
 let screen = document.querySelector('.screen')
 let displayScore = document.querySelector('.display-score')
 let restartBtn = document.querySelector('.restart')
+let txt = document.querySelector('h2')
 
 
 let score = 0;
-const scoreIncrement = setInterval(()=>{
+function startScore(){
+  var scoreIncrement = setInterval(()=>{
     score ++
     displayScore.textContent = score
   }, 100)
+  block.classList.add('move')
+  txt.innerHTML= ``
+
   
+}
 
 function jump(){
-  character.classList.add('jump')
+  if(character.classList.contains != jump){
+      character.classList.add('jump')
+  }
   setTimeout(()=>{
     character.classList.remove('jump')
   }, 500)
+  
 }
 
 screen.addEventListener('click', () => {
   jump()
+  startScore()
 })
 
 
@@ -28,19 +38,24 @@ document.addEventListener('keydown', event => {
   if (event.code === 'Space') {
     jump()
   }
+  startScore()
 })
-
 
 let detectContact = setInterval(()=>{
 let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'))
 let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('Left'))
 
 if( blockLeft >= 50 && blockLeft <= 100 && characterTop >= 250){
-  alert(`You hit the block. You lost \n Your Score : ${score}`)
+  txt.innerHTML = `GameOver <p>You Scored : ${score}</p> `
   block.classList.remove('move')
-  clearInterval(scoreIncrement)
+
+  document.querySelector('.score').innerHTML = `<h5>Restart to start the score </h5>`
+
 }
 }, 10)
+
+
+
 
 restartBtn.addEventListener('click', ()=> {
   location.reload()
